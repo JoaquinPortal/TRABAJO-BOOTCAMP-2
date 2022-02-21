@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Shopping Udep</title>
+ <link rel="stylesheet" href="estilos.css">
+ <script src="https://kit.fontawesome.com/85c0380de3.js" crossorigin="anonymous"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body class="wrapper">
+
+
+
+ <header class="header-responsive">
+  <div onclick = "contactus()" class="contacto">
+    <!-- Zona contáctanos: Inicio del header
+    Se ha colocado los i dentro con el h3 y su  respectivo a. Los
+    -->
+   <h3>Contáctanos  
+    <a href="https://www.instagram.com/pedrorotta_ime/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+    <a href="https://www.facebook.com/pedrorottaime" target="_blank"><i class="fa-brands fa-facebook"></i> </h3></a>
+  </div>
+
+  <div class="principal-header-account">
+   <!--El div principal del header-->
+   <div class="div-logo-image">
+    <!--El Div del logo-->
+    <a href="index.html">
+    <img src="images/logo.png" alt="logo" width="60%">
+    </a>
+   </div>
+
+   <div class="div-buscador-header">
+    <!--Buscador del header-->
+    <input type="text" placeholder="Busca tu producto...">
+    <i class="fa-solid fa-magnifying-glass glass"></i>
+   </div>
+
+   <div class="div-users-login-shopping">
+    <!--Carrito de compras y usuario-->
+    <div onclick = "login()" class="users-login-button">
+     <p class="user-login-button-text"><i class="fa-solid fa-user"></i> Mi cuenta </p>
+    </div>
+    <div onclick="openmodalshopping()" class="shooping-button-car">
+     <!--Div para el carrito de compras-->
+     <i class="fa-solid fa-cart-shopping car-shooping-button-icon"></i>
+     <div class="counter-shopping-div">
+      <p>0</p>
+     </div>
+    </div>
+   </div>
+
+  </div>
+
+
+ </header>
+
+ <aside id="modal-contactanos" class="show_modal">
+  <!--El aside que contiene al modal de contáctanos (display on contactus)-->
+  <h2 class="modal-title">Déjanos tus datos: </h2>
+  <form action="#" method="get" class="order">
+
+   <label for="nameform">Nombre: </label>
+   <input type="text" id="nameform" value="">
+
+   <label for="emailform">Email: </label>
+   <input type ="email" id="emailform" value="">
+
+   <label for="celform">Celular: </label>
+   <input type="text" id="name" value="">
+   <button>Enviar</button>
+  </form>
+  <i onclick="closecontactus()" class="fa-solid fa-xmark mark-closed"></i>
+ </aside>
+
+ <div>
+     <div class='base'></div>
+    <ul class="cat">
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_1.jpg" alt="#" />
+              <img class="max" src="images/reloj_1.jpg" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_2.jpg" alt="#" />
+              <img class="max" src="images/reloj_2.jpg" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_3.jpg" alt="#" />
+              <img class="max" src="images/reloj_3.jpg" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_4.jpg" alt="#" />
+              <img class="max" src="images/reloj_4.jpg" alt="#" />
+          </a>
+        </li>
+    </ul>
+    <ul class="cat">
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_5.jpg" alt="#" />
+              <img class="max" src="images/reloj_5.jpg" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_6.jpg" alt="#" />
+              <img class="max" src="images/reloj_6.jpg" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_7.jpg" alt="#" />
+              <img class="max" src="images/reloj_7.jpg" alt="#" />   
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <img class="min" src="images/reloj_8.jpg" alt="#" />
+              <img class="max" src="images/reloj_8.jpg" alt="#" />
+          </a>
+        </li>
+  </ul>
+  
+</div>
+
+
+
+
+
+
+
+ <footer class="the-footer">
+        <div class="wrap">
+        PORTAL CHUAN JOAQUIN RODRIGO
+        </div>
+</footer>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
